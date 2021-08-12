@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gitclosedpullrequest">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name="com.adarsh.gitclosedpullrequest.GitClosedPullApplication"
         android:allowBackup="true"
