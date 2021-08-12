@@ -70,4 +70,7 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
     implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
 
+    // Coroutine - Flow
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine_flow_version"
+
 }

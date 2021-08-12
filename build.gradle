@@ -6,6 +6,7 @@ buildscript {
     ext.paging_version = "3.0.1"
     ext.navigation_version = "2.3.5"
     ext.androidxCoreKtx = "1.6.0"
+    ext.coroutine_flow_version = "1.4.3"
     repositories {
         google()
         jcenter()
