@@ -1,9 +1,9 @@
 package com.adarsh.gitclosedpullrequest.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment
 import com.example.gitclosedpullrequest.databinding.ActivityClosedPullListingBinding
 
 class ClosedPullListingActivity : AppCompatActivity() {
@@ -16,7 +16,7 @@ class ClosedPullListingActivity : AppCompatActivity() {
         binding = ActivityClosedPullListingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        navController = Navigation.findNavController(binding.navHostFragment)
+        navController = (supportFragmentManager.findFragmentById(binding.navHostFragment.id) as NavHostFragment).navController
     }
 
     override fun onNavigateUp(): Boolean = navController.navigateUp()
